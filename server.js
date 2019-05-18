@@ -23,7 +23,7 @@ http.listen(port, () => {
 })
 
 // Connect to mongo
-mongoose.connect('mongodb+srv://cyr978:EvanChen_0321@cluster0-nguai.mongodb.net/test?retryWrites=true', {
+mongoose.connect('MongoDB_URL', {
     useNewUrlParser: true
 })
 db = mongoose.connection

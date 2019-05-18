@@ -1,0 +1,14 @@
+body {
+  /*background-color: lightblue;*/
+  font-family: 'Samurai', 'Noto Sans TC', 'Arial', sans-serif;
+  font-size: 16pt;
+  width: 0px auto;
+}
+form {
+  width: 567px;
+  margin: auto;
+  margin-top: 30vh;
+}
+input {
+  /*width: 100%;*/
+}

@@ -2,7 +2,7 @@ import React from 'react';
 export default ({content, own, other}) => {
 	return (
         <tr>
-            <th className="title">對手</th>
+            <th className="title contest_info">對手</th>
             <td>{content}</td>
             <td className="PerGame" rowSpan="2">{own[0]}:{other[0]}</td>
             <td className="PerGame" rowSpan="2">{own[1]}:{other[1]}</td>

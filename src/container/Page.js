@@ -884,12 +884,12 @@ class Page extends Component {
                 <tbody>
                     <Section content={this.props.date} change={this.change}/>
                     <tr>
-                        <th className="title">時間</th>
+                        <th className="title contest_info">時間</th>
                         <td>{this.props.time}</td>
                     </tr>
                     <Score content={this.props.opponent} own={this.state.quarter.own} other={this.state.quarter.other}/>
                     <tr>
-                        <th className="title">球場</th>
+                        <th className="title contest_info">球場</th>
                         <td>{this.props.court}</td>
                     </tr>
                 </tbody>
@@ -898,8 +898,8 @@ class Page extends Component {
             <table id="record">
                 <tbody>
                     <tr>
-                        <th className="num" rowSpan="2">背號</th>
-                        <th className="name" rowSpan="2">名字</th>
+                        <th className="num playerNumber" rowSpan="2">背號</th>
+                        <th className="name playerName" rowSpan="2">名字</th>
                         <th colSpan="4">2分</th>
                         <th colSpan="4">3分</th>
                         <th colSpan="4">罰球</th>
@@ -958,11 +958,11 @@ class Page extends Component {
                     <Button id="opponent" calculate={this.calculate}/>
                 </tbody>
             </table>
-            <div>
+	    <div>
                 <p>背號：<input id="numInput" type="text" placeholder="請輸入#"/></p>
                 <p>姓名：<input id="nameInput" type="text" placeholder="請輸入..."/></p>
-                <button id="add" onClick={this.addPlayer}>新增球員</button><br/>
-                <button id="clear" onClick={this.clearAll}>比賽結束</button>
+                <button className="btn btn-outline-dark btn-lg" id="add" onClick={this.addPlayer}>新增球員</button>    
+                <button className="btn btn-outline-dark btn-lg" id="clear" onClick={this.clearAll}>比賽結束</button>
             </div>
         </div>
         );
